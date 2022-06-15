@@ -1,0 +1,14 @@
+.middle{
+    ul{
+        li{
+            margin-top: 1px;
+            a{
+                font-size: 1.3rem;
+                span{
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+            }
+        }
+    }
+}
