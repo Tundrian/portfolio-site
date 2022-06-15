@@ -49,6 +49,21 @@
   width: 100%;
   height: auto;
 }
+#main #about .container header h2 {
+  color: white;
+}
+#main #about .container ul {
+  list-style: none;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+#main #about .container ul li i {
+  font-size: 4rem;
+}
 
 /*
 	Prologue by HTML5 UP
@@ -1933,7 +1948,7 @@ button:active,
   background-color: #f5fafa;
 }
 #main > section.three {
-  background-color: #ecf1f1;
+  background-color: #19191d;
 }
 #main > section.four {
   background-color: #e8edec;
