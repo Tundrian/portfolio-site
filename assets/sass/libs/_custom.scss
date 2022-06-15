@@ -12,3 +12,63 @@
         }
     }
 }
+
+#main{
+    
+    #top{
+        .container{
+            header{
+                h2{
+                    font-size: 2rem;
+                    .name-highlight{
+                        color: rgb(131, 218, 131);
+                        font-weight: 400;
+                        font-size: 3rem;
+                    }
+                    a{
+                        color: rgb(69, 205, 223);
+                    }
+                }
+            }
+        }
+    }
+    #top.one{
+        position: relative;
+        .attribution{
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            color: rgba(134, 134, 134, 0.397);
+            font-size: 0.8rem;
+            padding-right: 1rem;
+            a{
+                color: lighten(rgba(134, 134, 134, 0.397), 40%);
+                &:hover{
+                    color: rgb(108, 218, 218);;
+                }
+            }
+        }
+    }
+    #portfolio.two{
+        background-color:#1f272c;
+        .container{
+            p{
+                .skills{
+                    color: rgb(69, 205, 223);
+                }
+            }
+            .row{
+                &>div{
+                    .item{
+                        &>a{
+                            .portfolio-video{
+                                width: 100%;
+                                height: auto;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

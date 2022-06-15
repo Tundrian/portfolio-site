@@ -308,6 +308,15 @@
 		img {
 			display: block;
 			width: 100%;
+			border-top-right-radius: 10px;
+			border-top-left-radius: 10px;
+		}
+
+		video {
+			display: block;
+			width: 100%;
+			border-top-right-radius: 10px;
+			border-top-left-radius: 10px;
 		}
 
 		&.avatar48 {
@@ -505,14 +514,15 @@
 		color: #fff !important;
 		text-decoration: none;
 		padding: 0.75em 2.5em 0.75em 2.5em;
-		background-color: #8ebebc;
+		background-color: #24691d;
 		border: 0;
 		cursor: pointer;
 		@include vendor('background-image', ('linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15))', 'url("images/overlay.png")'));
-		@include vendor('transition', 'background-color 0.35s ease-in-out');
+		@include vendor('transition', 'background-color 0.35s ease-in-out, scale 0.35s ease-in-out');
 
 		&:hover {
-			background-color: #9ececc;
+			background-color: lighten(#24691d,5%);
+			scale: 1.1;
 		}
 
 		&:active {
@@ -523,17 +533,28 @@
 /* Item */
 
 	.item {
-		box-shadow: 0 0.05em 0.15em 0 rgba(0, 0, 0, 0.05);
+		box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 		margin-bottom: 40px;
+		border: thin solid rgba(128, 128, 128, 0.192);
+		border-top-left-radius: 10px;
+		border-top-right-radius: 10px;
+		transition: box-shadow 0.2s ease-in-out, scale 0.2s ease-in-out;
+
+		&:hover{
+			box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+			scale: 1.05;
+		}
 
 		header {
-			background: #fff;
+			background: rgb(165, 177, 190);
 			margin: 0;
 			padding: 1em 0 1em 0;
 			font-size: 0.8em;
 
 			h3 {
-				font-size: 1em;
+				font-size: 1.5em;
+				color:rgb(27, 29, 53);
+				font-weight: 400;
 			}
 		}
 	}
@@ -830,8 +851,10 @@
 			}
 
 			&.one {
-				background-color: #81918E;
-				background-image: url('../../images/banner.jpg');
+				background-color: #1f1f1f;
+				background-image: url('../../images/banner-2.jpg');
+				background-repeat: no-repeat, repeat;
+				background-blend-mode:multiply;
 			}
 
 			&.two {
