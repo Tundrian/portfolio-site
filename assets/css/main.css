@@ -65,6 +65,34 @@
   font-size: 4rem;
 }
 
+.projects {
+  justify-content: center;
+}
+
+#about .container h3 {
+  margin-bottom: 10px;
+  color: #d4d4d4;
+  border-bottom: thin rgba(128, 128, 128, 0.281) solid;
+}
+
+#footer.footer {
+  background-color: #242429;
+  padding: 0;
+  margin-bottom: 0;
+}
+#footer.footer ul {
+  margin: 0;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+#contact .container form input, #contact .container form textarea {
+  color: #242429;
+}
+#contact .container form button {
+  scale: 1.5;
+}
+
 /*
 	Prologue by HTML5 UP
 	html5up.net | @ajlkn
