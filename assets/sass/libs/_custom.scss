@@ -68,6 +68,8 @@
             .row{
                 &>div{
                     .item{
+                        max-width: 95%;
+                        margin-bottom: 50px;
                         &>a{
                             .portfolio-video{
                                 width: 100%;
@@ -83,9 +85,21 @@
     #about{
         .container{
             header{
+                width: 100%;
                 h2{
                     color: white;
+                   
                 }
+            }
+            
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: center;
+
+            div{
+                max-width: 100%;
+                padding-inline: 2.5%;
             }
             ul{
                 list-style: none;
@@ -95,9 +109,12 @@
                 align-items: center;
                 margin: 0;
                 padding: 0;
+                
                 li{
+                    max-width: 45%;
+                    
                     i{
-                        font-size: 4rem;
+                        font-size: 3rem;
                     }
                 }
             }

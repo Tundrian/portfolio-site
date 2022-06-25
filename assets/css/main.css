@@ -45,12 +45,29 @@
 #main #portfolio.two .container p .skills {
   color: #45cddf;
 }
+#main #portfolio.two .container .row > div .item {
+  max-width: 95%;
+  margin-bottom: 50px;
+}
 #main #portfolio.two .container .row > div .item > a .portfolio-video {
   width: 100%;
   height: auto;
 }
+#main #about .container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+#main #about .container header {
+  width: 100%;
+}
 #main #about .container header h2 {
   color: white;
+}
+#main #about .container div {
+  max-width: 100%;
+  padding-inline: 2.5%;
 }
 #main #about .container ul {
   list-style: none;
@@ -61,8 +78,11 @@
   margin: 0;
   padding: 0;
 }
+#main #about .container ul li {
+  max-width: 45%;
+}
 #main #about .container ul li i {
-  font-size: 4rem;
+  font-size: 3rem;
 }
 
 #main #portfolio .container .projects {
