@@ -1,3 +1,11 @@
+
+@include breakpoints((
+    wide:      ( 961px,  1880px ),
+    normal:    ( 961px,  1620px ),
+    narrow:    ( 961px,  1320px ),
+    narrower:  ( 737px,  960px  ),
+    mobile:    ( null,   736px  ),
+));
 .middle{
     ul{
         li{
@@ -97,9 +105,49 @@
     }
 }
 
-.projects{
-   justify-content: center;
+#main {
+    #portfolio{
+        .container{
+            .projects{
+                width: 100%;
+                justify-content: center;
+                
+                .projects-flex{
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    flex-flow: row wrap;
+                    
+                    width: 100%;
+                    
+                    &>.item{
+                        width: 45%;
+                        @include breakpoint('wide') {
+                            width: 45%;
+                        }
+                
+                        @include breakpoint('normal') {
+                            width: 45%;
+                        }
+                
+                        @include breakpoint('narrow') {
+                            width: 100%;
+                        }
+                
+                        @include breakpoint('<=narrower') {
+                            width: 100%;
+                        }
+                
+                        @include breakpoint('<=mobile') {
+                            width: 100%;
+                        }
+                    }
+                }
+             }
+        }
+    }
 }
+
 
 #about{
     .container{
@@ -130,10 +178,27 @@
     
     form{
         
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+
+        &>*{
+            width: 90%;
+            max-width: 800px;
+        }
         input, textarea{
             color:rgb(36, 36, 41);
-        
+            padding: 10px;
+        }
+
+        textarea{
+            max-height: 50px;
             
+        }
+
+        p{
+            margin-bottom: 0;
         }
 
         button{

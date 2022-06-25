@@ -65,8 +65,44 @@
   font-size: 4rem;
 }
 
-.projects {
+#main #portfolio .container .projects {
+  width: 100%;
   justify-content: center;
+}
+#main #portfolio .container .projects .projects-flex {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row wrap;
+  width: 100%;
+}
+#main #portfolio .container .projects .projects-flex > .item {
+  width: 45%;
+}
+@media screen and (min-width: 961px) and (max-width: 1880px) {
+  #main #portfolio .container .projects .projects-flex > .item {
+    width: 45%;
+  }
+}
+@media screen and (min-width: 961px) and (max-width: 1620px) {
+  #main #portfolio .container .projects .projects-flex > .item {
+    width: 45%;
+  }
+}
+@media screen and (min-width: 961px) and (max-width: 1320px) {
+  #main #portfolio .container .projects .projects-flex > .item {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 960px) {
+  #main #portfolio .container .projects .projects-flex > .item {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 736px) {
+  #main #portfolio .container .projects .projects-flex > .item {
+    width: 100%;
+  }
 }
 
 #about .container h3 {
@@ -86,8 +122,25 @@
   padding-top: 20px;
 }
 
+#contact .container form {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+#contact .container form > * {
+  width: 90%;
+  max-width: 800px;
+}
 #contact .container form input, #contact .container form textarea {
   color: #242429;
+  padding: 10px;
+}
+#contact .container form textarea {
+  max-height: 50px;
+}
+#contact .container form p {
+  margin-bottom: 0;
 }
 #contact .container form button {
   scale: 1.5;
@@ -1665,7 +1718,6 @@ button:active,
 .item {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   margin-bottom: 40px;
-  border: thin solid rgba(128, 128, 128, 0.192);
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   transition: box-shadow 0.2s ease-in-out, scale 0.2s ease-in-out;
@@ -1675,14 +1727,14 @@ button:active,
   scale: 1.05;
 }
 .item header {
-  background: #a5b1be;
+  background: rgba(13, 19, 26, 0.993);
   margin: 0;
   padding: 1em 0 1em 0;
   font-size: 0.8em;
 }
 .item header h3 {
   font-size: 1.5em;
-  color: #1b1d35;
+  color: #a8a8a8;
   font-weight: 400;
 }
 
@@ -1967,10 +2019,7 @@ button:active,
   background-position: center center;
 }
 #main > section.one {
-  background-color: #1f1f1f;
-  background-image: url("../../images/banner-2.jpg");
-  background-repeat: no-repeat, repeat;
-  background-blend-mode: multiply;
+  background-color: #1a2125;
 }
 #main > section.two {
   background-color: #f5fafa;

@@ -535,7 +535,7 @@
 	.item {
 		box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 		margin-bottom: 40px;
-		border: thin solid rgba(128, 128, 128, 0.192);
+		// border: thin solid rgba(128, 128, 128, 0.192);
 		border-top-left-radius: 10px;
 		border-top-right-radius: 10px;
 		transition: box-shadow 0.2s ease-in-out, scale 0.2s ease-in-out;
@@ -547,14 +547,14 @@
 		}
 
 		header {
-			background: rgb(165, 177, 190);
+			background: rgba(13, 19, 26, 0.993);
 			margin: 0;
 			padding: 1em 0 1em 0;
 			font-size: 0.8em;
 
 			h3 {
 				font-size: 1.5em;
-				color:rgb(27, 29, 53);
+				color:rgb(168, 168, 168);
 				font-weight: 400;
 			}
 		}
@@ -852,10 +852,10 @@
 			}
 
 			&.one {
-				background-color: #1f1f1f;
-				background-image: url('../../images/banner-2.jpg');
-				background-repeat: no-repeat, repeat;
-				background-blend-mode:multiply;
+				background-color: darken(#1e262b,2%);
+				// background-image: url('../../images/banner-2.jpg');
+				// background-repeat: no-repeat, repeat;
+				// background-blend-mode:multiply;
 			}
 
 			&.two {
