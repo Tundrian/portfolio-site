@@ -826,8 +826,13 @@
 				color: #ddd;
 				color: rgba(255, 255, 255, 0.75);
 
-				h2, h3, h4, h5, h6 {
-					color: inherit;
+				h2, h3, h4, h5, h6, p {
+					// color: inherit;
+					color: white;
+					// color: black;
+					// text-align: left;
+					// max-width: 33%;
+					
 				}
 
 				strong {
@@ -852,10 +857,10 @@
 			}
 
 			&.one {
-				background-color: darken(#1e262b,2%);
-				// background-image: url('../../images/banner-2.jpg');
-				// background-repeat: no-repeat, repeat;
-				// background-blend-mode:multiply;
+				background-color: darken(#969696,1%);
+				background-image: url('../../images/banner.jpg');
+				background-repeat: no-repeat, repeat;
+				background-blend-mode:multiply;
 			}
 
 			&.two {

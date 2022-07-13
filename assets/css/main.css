@@ -40,7 +40,9 @@
   color: #6cdada;
 }
 #main #portfolio.two {
-  background-color: #1f272c;
+  background: linear-gradient(-45deg, #31140b, #461025, #092b38, #0b0730);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
 }
 #main #portfolio.two .container p .skills {
   color: #45cddf;
@@ -164,6 +166,100 @@
 }
 #contact .container form button {
   scale: 1.5;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+#main #top .container footer .btn-neon {
+  position: relative;
+  display: inline-block;
+  padding: 15px 30px;
+  color: #42cf1f;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  text-decoration: none;
+  font-size: 24px;
+  overflow: hidden;
+  transition: 0.2s;
+  border: thin dashed #42cf1f;
+}
+#main #top .container footer .btn-neon:hover {
+  color: #001d02;
+  font-weight: 500;
+  background: #42cf1f;
+  box-shadow: 0 0 10px #42cf1f, 0 0 40px #42cf1f, 0 0 80px #42cf1f;
+  transition-delay: 1s;
+}
+#main #top .container footer .btn-neon:hover .btn-neon-span:nth-child(1) {
+  left: 100%;
+  transition: 1s;
+}
+#main #top .container footer .btn-neon:hover .btn-neon-span:nth-child(2) {
+  top: 100%;
+  transition: 1s;
+  transition-delay: 0.25s;
+}
+#main #top .container footer .btn-neon:hover .btn-neon-span:nth-child(3) {
+  right: 100%;
+  transition: 1s;
+  transition-delay: 0.5s;
+}
+#main #top .container footer .btn-neon:hover .btn-neon-span:nth-child(4) {
+  bottom: 100%;
+  transition: 1s;
+  transition-delay: 0.75s;
+}
+#main #top .container footer .btn-neon .btn-neon-span {
+  position: absolute;
+  display: block;
+}
+#main #top .container footer .btn-neon .btn-neon-span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #42cf1f);
+}
+#main #top .container footer .btn-neon .btn-neon-span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #42cf1f);
+}
+#main #top .container footer .btn-neon .btn-neon-span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #42cf1f);
+}
+#main #top .container footer .btn-neon .btn-neon-span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #42cf1f);
 }
 
 /*
@@ -2019,8 +2115,8 @@ button:active,
   color: #ddd;
   color: rgba(255, 255, 255, 0.75);
 }
-#main > section.dark h2, #main > section.dark h3, #main > section.dark h4, #main > section.dark h5, #main > section.dark h6 {
-  color: inherit;
+#main > section.dark h2, #main > section.dark h3, #main > section.dark h4, #main > section.dark h5, #main > section.dark h6, #main > section.dark p {
+  color: white;
 }
 #main > section.dark strong {
   color: #fff;
@@ -2039,7 +2135,10 @@ button:active,
   background-position: center center;
 }
 #main > section.one {
-  background-color: #1a2125;
+  background-color: #939393;
+  background-image: url("../../images/banner.jpg");
+  background-repeat: no-repeat, repeat;
+  background-blend-mode: multiply;
 }
 #main > section.two {
   background-color: #f5fafa;
