@@ -15,12 +15,12 @@
   font-size: 2rem;
 }
 #main #top .container header h2 .name-highlight {
-  color: #83da83;
+  color: rgb(131, 218, 131);
   font-weight: 400;
   font-size: 3rem;
 }
 #main #top .container header h2 a {
-  color: #45cddf;
+  color: rgb(69, 205, 223);
 }
 #main #top.one {
   position: relative;
@@ -37,7 +37,7 @@
   color: rgba(236, 236, 236, 0.397);
 }
 #main #top.one .attribution a:hover {
-  color: #6cdada;
+  color: rgb(108, 218, 218);
 }
 #main #portfolio.two {
   background: linear-gradient(-45deg, #31140b, #461025, #092b38, #0b0730);
@@ -45,7 +45,7 @@
   animation: gradient 15s ease infinite;
 }
 #main #portfolio.two .container p .skills {
-  color: #45cddf;
+  color: rgb(69, 205, 223);
 }
 #main #portfolio.two .container .row > div .item {
   max-width: 95%;
@@ -129,12 +129,12 @@
 
 #about .container h3 {
   margin-bottom: 10px;
-  color: #d4d4d4;
+  color: rgb(212, 212, 212);
   border-bottom: thin rgba(128, 128, 128, 0.281) solid;
 }
 
 #footer.footer {
-  background-color: #242429;
+  background-color: rgb(36, 36, 41);
   padding: 0;
   margin-bottom: 0;
 }
@@ -155,7 +155,7 @@
   max-width: 800px;
 }
 #contact .container form input, #contact .container form textarea {
-  color: #242429;
+  color: rgb(36, 36, 41);
   padding: 10px;
 }
 #contact .container form textarea {
@@ -194,20 +194,20 @@ body {
   position: relative;
   display: inline-block;
   padding: 15px 30px;
-  color: #42cf1f;
+  color: rgb(66, 207, 31);
   text-transform: uppercase;
   letter-spacing: 4px;
   text-decoration: none;
   font-size: 24px;
   overflow: hidden;
   transition: 0.2s;
-  border: thin dashed #42cf1f;
+  border: thin dashed rgb(66, 207, 31);
 }
 #main #top .container footer .btn-neon:hover {
-  color: #001d02;
+  color: rgb(0, 29, 2);
   font-weight: 500;
-  background: #42cf1f;
-  box-shadow: 0 0 10px #42cf1f, 0 0 40px #42cf1f, 0 0 80px #42cf1f;
+  background: rgb(66, 207, 31);
+  box-shadow: 0 0 10px rgb(66, 207, 31), 0 0 40px rgb(66, 207, 31), 0 0 80px rgb(66, 207, 31);
   transition-delay: 1s;
 }
 #main #top .container footer .btn-neon:hover .btn-neon-span:nth-child(1) {
@@ -238,28 +238,28 @@ body {
   left: -100%;
   width: 100%;
   height: 2px;
-  background: linear-gradient(90deg, transparent, #42cf1f);
+  background: linear-gradient(90deg, transparent, rgb(66, 207, 31));
 }
 #main #top .container footer .btn-neon .btn-neon-span:nth-child(2) {
   top: -100%;
   right: 0;
   width: 2px;
   height: 100%;
-  background: linear-gradient(180deg, transparent, #42cf1f);
+  background: linear-gradient(180deg, transparent, rgb(66, 207, 31));
 }
 #main #top .container footer .btn-neon .btn-neon-span:nth-child(3) {
   bottom: 0;
   right: -100%;
   width: 100%;
   height: 2px;
-  background: linear-gradient(270deg, transparent, #42cf1f);
+  background: linear-gradient(270deg, transparent, rgb(66, 207, 31));
 }
 #main #top .container footer .btn-neon .btn-neon-span:nth-child(4) {
   bottom: -100%;
   left: 0;
   width: 2px;
   height: 100%;
-  background: linear-gradient(360deg, transparent, #42cf1f);
+  background: linear-gradient(360deg, transparent, rgb(66, 207, 31));
 }
 
 /*
@@ -1850,7 +1850,7 @@ button:active,
 }
 .item header h3 {
   font-size: 1.5em;
-  color: #a8a8a8;
+  color: rgb(168, 168, 168);
   font-weight: 400;
 }
 
@@ -2109,7 +2109,6 @@ button:active,
   padding: 4em 0;
   box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.05), inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.025);
   text-align: center;
-  background-image: url("images/overlay.png");
 }
 #main > section.dark {
   color: #ddd;
@@ -2135,8 +2134,7 @@ button:active,
   background-position: center center;
 }
 #main > section.one {
-  background-color: #939393;
-  background-image: url("../../images/banner.jpg");
+  background-color: #30343d;
   background-repeat: no-repeat, repeat;
   background-blend-mode: multiply;
 }
@@ -2156,17 +2154,14 @@ button:active,
   body, input, textarea, select {
     font-size: 17pt;
   }
-
   /* Header */
   #header {
     width: 300px;
   }
-
   /* Footer */
   #footer {
     margin-left: 300px;
   }
-
   /* Main */
   #main {
     margin-left: 300px;
@@ -2188,31 +2183,25 @@ button:active,
   body, input, textarea, select {
     font-size: 16pt;
   }
-
   .container {
     padding: 0 2em 0 2em;
   }
-
   /* Icons */
   ul.icons li a {
     width: 1.75em;
   }
-
   /* Item */
   .item {
     margin-bottom: 20px;
   }
-
   /* Header */
   #header {
     width: 20%;
   }
-
   #logo .image {
     position: relative;
     margin: 0 0 0.5em 0;
   }
-
   #nav ul li a, .middle ul li a {
     font-size: 0.8em;
     padding-top: 0.5em;
@@ -2226,12 +2215,10 @@ button:active,
     margin-left: -1.25em;
     line-height: 2.25em;
   }
-
   /* Footer */
   #footer {
     margin-left: 20%;
   }
-
   /* Main */
   #main {
     margin-left: 20%;
@@ -2247,30 +2234,24 @@ button:active,
   html, body {
     overflow-x: hidden;
   }
-
   body, input, textarea, select {
     font-size: 16pt;
   }
-
   header br {
     display: none;
   }
-
   .container {
     padding: 0 2em 0 2em;
   }
-
   /* Item */
   .item {
     margin-bottom: 15px;
   }
-
   /* Icons */
   ul.icons a {
     width: 1.75em;
     font-size: 1.25em;
   }
-
   /* Header */
   #header {
     -moz-backface-visibility: hidden;
@@ -2308,15 +2289,12 @@ button:active,
     margin-top: 2em;
     position: relative;
   }
-
   #logo {
     margin: 1.5em 1.25em 1.25em 1.25em;
   }
-
   #nav ul li a, .middle ul li a {
     padding: 0.5em 1.25em 0.5em 1.25em;
   }
-
   #headerToggle {
     -moz-backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
@@ -2372,7 +2350,6 @@ button:active,
     height: 2.25em;
     line-height: 2.25em;
   }
-
   body.header-visible #main {
     -moz-transform: translateX(275px);
     -webkit-transform: translateX(275px);
@@ -2391,12 +2368,10 @@ button:active,
     -ms-transform: translateX(0);
     transform: translateX(0);
   }
-
   /* Footer */
   #footer {
     margin-left: 0;
   }
-
   /* Main */
   #main {
     -moz-backface-visibility: hidden;
@@ -2423,23 +2398,19 @@ button:active,
   body, input, textarea, select {
     font-size: 14pt;
   }
-
   h2 {
     font-size: 1.5em;
     letter-spacing: 0;
     font-weight: 300;
   }
-
   .container {
     padding: 0 15px 0 15px;
   }
-
   /* List */
   ul.icons a {
     width: 2em;
     font-size: 1.25em;
   }
-
   /* Main */
   #main > section {
     padding: 2em 0;
@@ -2450,7 +2421,6 @@ button:active,
   #main section.cover header {
     padding: 0 1em;
   }
-
   /* Footer */
   #footer .copyright li {
     display: block;
