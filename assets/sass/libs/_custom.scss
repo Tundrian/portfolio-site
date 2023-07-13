@@ -31,7 +31,7 @@
                     .name-highlight{
                         color: rgb(131, 218, 131);
                         font-weight: 400;
-                        font-size: 3rem;
+                        font-size: 2.5rem;
                     }
                     a{
                         color: rgb(69, 205, 223);
@@ -62,6 +62,12 @@
       background-size: 400% 400%;
       animation: gradient 15s ease infinite;
         .container{
+            color: white;
+            header{
+                h2{
+                    color: white;
+                }
+            }
             p{
                 .skills{
                     color: rgb(69, 205, 223);
@@ -130,6 +136,7 @@
             .projects{
                 width: 100%;
                 justify-content: center;
+                
                 
                 .projects-flex{
                     display: flex;
@@ -221,7 +228,10 @@
         }
 
         button{
-            scale: 1.5;
+            scale: 1.1;
+            max-width: 800px;
+            width: 90%;
+            font-size: 1.1rem;
         }
     }
 }   
@@ -252,8 +262,8 @@ html, body {
 
 
 //   Banner Button
-$neon-color: rgb(66, 207, 31);
-$neon-text-color: rgb(0, 29, 2);
+$neon-color: rgb(21, 135, 163);
+$neon-text-color: rgb(230, 231, 230);
 #main #top .container footer .btn-neon {
     position: relative;
     display: inline-block;
@@ -337,4 +347,23 @@ $neon-text-color: rgb(0, 29, 2);
         }
         
     }
+}
+
+@media only screen and (max-width: 500px) {
+    #main {
+        #top {
+            .container {
+                header {
+                    .alt, .name-highlight, p{
+                        font-size: 1rem;
+                    }
+                    
+                }
+            }
+        }
+    }
+}
+
+#contactSubmit {
+    margin-top: 10px;
 }
